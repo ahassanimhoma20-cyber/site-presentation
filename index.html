@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Entreprise — Présentation</title>
+  <meta name="description" content="Présentation de Mon Entreprise : nos services, notre équipe et comment nous contacter.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- En-tête / navigation -->
+  <header class="header">
+    <div class="container nav">
+      <a href="#accueil" class="logo">Mon<span>Entreprise</span></a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#equipe">Équipe</a></li>
+          <li><a href="#contact" class="btn btn-small">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Accueil -->
+    <section id="accueil" class="hero">
+      <div class="container">
+        <h1>Des solutions sur mesure pour faire grandir votre activité</h1>
+        <p>Nous accompagnons les entreprises avec des services fiables, un suivi humain et des résultats mesurables.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn">Nous contacter</a>
+          <a href="#services" class="btn btn-outline">Découvrir nos services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Nos services</h2>
+        <p class="section-intro">Ce que nous faisons de mieux pour nos clients.</p>
+        <div class="grid">
+          <article class="card reveal">
+            <div class="card-icon">📞</div>
+            <h3>Relation client</h3>
+            <p>Gestion des appels entrants et sortants, avec des conseillers formés à votre marque.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">💬</div>
+            <h3>Support multicanal</h3>
+            <p>Téléphone, e-mail, chat et réseaux sociaux : un service cohérent sur tous les canaux.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">📊</div>
+            <h3>Suivi et reporting</h3>
+            <p>Des indicateurs clairs et des rapports réguliers pour piloter la qualité de service.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="apropos" class="section section-alt">
+      <div class="container about">
+        <div>
+          <h2>À propos de nous</h2>
+          <p>Fondée avec une idée simple — mettre l'humain au cœur du service — notre entreprise accompagne des clients de toutes tailles.</p>
+          <p>Notre force : une équipe engagée, des processus rigoureux et une vraie écoute de vos besoins.</p>
+        </div>
+        <ul class="stats">
+          <li class="reveal"><strong data-count="10">0</strong><span>années d'expérience</span></li>
+          <li class="reveal"><strong data-count="150">0</strong><span>clients accompagnés</span></li>
+          <li class="reveal"><strong data-count="98">0</strong><span>% de satisfaction</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Équipe -->
+    <section id="equipe" class="section">
+      <div class="container">
+        <h2>Notre équipe</h2>
+        <p class="section-intro">Les personnes qui font avancer vos projets.</p>
+        <div class="grid">
+          <article class="member reveal">
+            <div class="avatar">AB</div>
+            <h3>Prénom Nom</h3>
+            <p>Directeur·rice</p>
+          </article>
+          <article class="member reveal">
+            <div class="avatar">CD</div>
+            <h3>Prénom Nom</h3>
+            <p>Responsable des opérations</p>
+          </article>
+          <article class="member reveal">
+            <div class="avatar">EF</div>
+            <h3>Prénom Nom</h3>
+            <p>Responsable qualité</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact">
+        <div>
+          <h2>Contactez-nous</h2>
+          <p>Une question, un projet ? Écrivez-nous, nous répondons sous 24 h.</p>
+          <ul class="contact-info">
+            <li>📍 Adresse de l'entreprise</li>
+            <li>📞 +00 0 00 00 00 00</li>
+            <li>✉️ contact@exemple.com</li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <label>Nom
+            <input type="text" name="nom" required>
+          </label>
+          <label>E-mail
+            <input type="email" name="email" required>
+          </label>
+          <label>Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn">Envoyer</button>
+          <p class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mon Entreprise. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
